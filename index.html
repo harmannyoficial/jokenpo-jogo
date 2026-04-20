@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo-ken-pô</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="conteinerfundo">
+        <img id=imagemfundo src="https://i.pinimg.com/originals/dd/7f/8b/dd7f8bcdfdb66633159f1317ab1808d3.gif"
+            alt="jokenpoimagem">
+        <div id="caixa">
+            <section>
+                <h1>JO-KEN-POÔ!!!</h1>
+                <p id="p-escolha">Faça sua escolha:</p>
+
+                <button id="button1" value="papel"> <img data-jogada="papel" src="./assets.img/2papel.img" alt="Ícone"
+                        width="30" height="30" /></button>
+                <button id="button2" value="pedra"> <img data-jogada="pedra" src="./assets.img/2pedra.img" alt="Ícone"
+                        width="30" height="30" /></button>
+                <button id="button3" value="tesoura"> <img data-jogada="tesoura" src="./assets.img/2tesoura.img"
+                        alt="Ícone" width="30" height="30" /></button>
+                <!--imagem escolha da maquina pc -->
+
+                    <p id="p-maquina">maquina:</p>
+                <img id="img-resultado" src="./assets.img/2pedra.img" style="display: none;" />
+
+                <p id="resultado"> resultado</p>
+
+                <p> Sua pontuação: <span id="meuponto">0</span> </p>
+
+                <p> Pontuação da máquina: <span id="pcponto">0</span> </p>
+
+
+            </section>
+        </div>
+    </div>
+
+</body>
+<script src="/arquivo.js"></script>
+
+</html>
