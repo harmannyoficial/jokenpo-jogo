@@ -55,6 +55,7 @@ const paragrafo1 = document.querySelector("#resultado")
 const meuponto = document.querySelector('#meuponto')
 const pcponto = document.querySelector('#pcponto')
 const imgresultado = document.querySelector('#img-resultado')
+const pmaquina = document.querySelector('#p-maquina')
 
 //1°
 button1.addEventListener('click', function () {
@@ -64,6 +65,7 @@ button1.addEventListener('click', function () {
         paragrafo1.innerHTML = GAME_MESSAGES.DRAW   // troca a mensagem 
         imgresultado.src = "./assets.img/2papel.img" //troca a imagem 
         imgresultado.style = "block" // faz a imagem a parecer  utilizar no html style=" none" para sumir 
+        pmaquina.style="block"
         console.log(pc)
         console.log(` PAPEL ${GAME_MESSAGES.DRAW}`)
 
@@ -73,6 +75,7 @@ button1.addEventListener('click', function () {
         meuponto.innerHTML = contapontos() // conta os pontos 
         imgresultado.src = "./assets.img/2pedra.img"//troca a imagem 
         imgresultado.style = "block"  // faz a imagem a parecer  utilizar no html style=" none" para sumir
+        pmaquina.style="block"
         console.log(pc) // GUARDA O NOME SORTEADO PARA NAO TROCA DE NOME A CADA CLIQUE 
         console.log(GAME_MESSAGES.WIN)
     }
@@ -81,6 +84,7 @@ button1.addEventListener('click', function () {
         pcponto.innerHTML = contapontopc() // conta os pontos 
         imgresultado.src = "./assets.img/2tesoura.img"//troca a imagem 
         imgresultado.style = "block" // faz a imagem a parecer  utilizar no html style=" none" para sumir
+        pmaquina.style="block"
         console.log(pc) // GUARDA O NOME SORTEADO PARA NAO TROCA DE NOME A CADA CLIQUE 
         console.log(GAME_MESSAGES.LOSE)
     }
@@ -98,6 +102,7 @@ button2.addEventListener('click', function () {
         paragrafo1.innerHTML = GAME_MESSAGES.DRAW   // troca a mensagem 
         imgresultado.src = "./assets.img/2pedra.img" //troca a imagem 
         imgresultado.style = "block" // faz a imagem a parecer  utilizar no html style=" none" para sumir 
+        pmaquina.style="block"
         console.log(pc) // GUARDA O NOME SORTEADO PARA NAO TROCA DE NOME A CADA CLIQUE 
         console.log(` PEDRA ${GAME_MESSAGES.DRAW}`)
     }
@@ -106,6 +111,7 @@ button2.addEventListener('click', function () {
         meuponto.innerHTML = contapontos() // conta os pontos 
         imgresultado.src = "./assets.img/2tesoura.img" //troca a imagem 
         imgresultado.style = "block" // faz a imagem a parecer  utilizar no html style=" none" para sumir 
+        pmaquina.style="block"
         console.log(pc)// GUARDA O NOME SORTEADO PARA NAO TROCA DE NOME A CADA CLIQUE 
         console.log(GAME_MESSAGES.WIN)
     }
@@ -114,6 +120,7 @@ button2.addEventListener('click', function () {
         pcponto.innerHTML = contapontopc() // conta os pontos
         imgresultado.src = "./assets.img/2papel.img" //troca a imagem 
         imgresultado.style = "block" // faz a imagem a parecer  utilizar no html style=" none" para sumir 
+        pmaquina.style="block"
         console.log(pc) // GUARDA O NOME SORTEADO PARA NAO TROCA DE NOME A CADA CLIQUE 
         console.log(GAME_MESSAGES.LOSE)
     }
@@ -131,6 +138,7 @@ button3.addEventListener('click', function () {
         paragrafo1.innerHTML = GAME_MESSAGES.DRAW   // troca a mensagem 
         imgresultado.src = "./assets.img/2tesoura.img" //troca a imagem 
         imgresultado.style = "block" // faz a imagem a parecer  utilizar no html style=" none" para sumir 
+        pmaquina.style="block"
         console.log(pc)
         console.log(` TESOURA ${GAME_MESSAGES.DRAW}`)
     }
@@ -139,6 +147,7 @@ button3.addEventListener('click', function () {
         meuponto.innerHTML = contapontos() // conta os pontos 
         imgresultado.src = "./assets.img/2papel.img" //troca a imagem 
         imgresultado.style = "block" // faz a imagem a parecer  utilizar no html style=" none" para sumir 
+        pmaquina.style="block"
         console.log(pc)
         console.log(GAME_MESSAGES.WIN)
     }
@@ -147,6 +156,7 @@ button3.addEventListener('click', function () {
         pcponto.innerHTML = contapontopc() // conta os pontos
         imgresultado.src = "./assets.img/2pedra.img"//troca a imagem 
         imgresultado.style = "block" // faz a imagem a parecer  utilizar no html style=" none" para sumir
+        pmaquina.style="block"
         console.log(pc)
         console.log(GAME_MESSAGES.LOSE)
     }
